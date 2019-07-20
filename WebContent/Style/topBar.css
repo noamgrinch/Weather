@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+
+
+.topBar{
+	width:100%;
+	height:40px;
+    margin: 50px auto;
+ 	background-color: #0082ff;
+ 	border-radius: 5px;
+}
+
+.Hottest{
+	width:20%;
+	height:40px;
+	text-align: center;
+
+}
+

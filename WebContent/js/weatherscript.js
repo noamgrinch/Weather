@@ -1,21 +1,3 @@
-/*window.onload = function tryss(){
-	try{
-	$.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=Orlando&APPID=93063b4a7b640155f9e086514f637714", function(data) {
-		console.log(data);
-		
-		var im = "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png";
-		
-		var v = document.getElementById("w");
-		$(".icon").attr("src",im);
-		
-	}); 
-	}
-	catch(e){
-		alert(e);
-	}
-
-}*/
-
 
 var table;
 
@@ -32,6 +14,7 @@ window.onload = function pre(){
             th.innerHTML = col[i];
             tr.appendChild(th);
         }
+        table.setAttribute("id", "myTable");
 	}
 	catch(e){
 		console.log(e);
@@ -40,14 +23,14 @@ window.onload = function pre(){
 
 function getText(){
 	try{
-		$(".Title").animate({height : "140px"},300); //animates the div.
+		$(".Title").animate({height : "140px"},600); //animates the div.
 		var p = document.getElementById("showData");
 		setTimeout(function(){ //shows up data after the slide.
 			while (p.firstChild) { //removing components from previous searches.
 			    p.removeChild(p.firstChild);
 			}
 			table.deleteRow(1);
-	    },250);
+	    },599);
 
 	}
 	catch(e){}
@@ -82,14 +65,14 @@ function getText(){
                     	tabCell.innerHTML = values[j];
                     }
                     else{
-                    	tabCell.append=values[j];
+                    	tabCell.append(values[j]);
                     }
                 }
             	p.appendChild(table);
-            },300);
+            },600);
            
 			
-		    $(".Title").animate({height : "350px"},1000); //animates the div.
+		    $(".Title").animate({height : "250px"},1000); //animates the div.
 		    setTimeout(function(){ //shows up data after the slide.
 		    	$(".myTable").append(table);
 		    }, 2200);

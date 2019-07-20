@@ -20,7 +20,7 @@ body {
   border-radius: 5px;
 }
 
-.Title{
+.search{
   width: 80%;
   height: 150px;
   max-width: 960px;
@@ -30,6 +30,65 @@ body {
   border-radius: 10px;
   padding:7px;
   padding-bottom:30px;
+}
+
+.myTable{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  
+}
+
+table.myTable {
+  border: 2px solid #A40808;
+  background-color: #EEE7DB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.myTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.myTable tbody td {
+  font-size: 13px;
+}
+table.myTable tr:nth-child(even) {
+  background: #F5C8BF;
+}
+table.myTable thead {
+  background: #A40808;
+}
+table.myTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #A40808;
+}
+table.myTable thead th:first-child {
+  border-left: none;
+}
+
+table.myTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #A40808;
+}
+table.myTable tfoot td {
+  font-size: 13px;
+}
+table.myTable tfoot .links {
+  text-align: right;
+}
+table.myTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
 }
 
 .Data{
