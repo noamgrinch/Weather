@@ -3,7 +3,7 @@ var table;
 
 window.onload = function pre(){
 	try{
-		var col = ["City" , "Country", "Tempature", "Description","Image"]
+		var col = ["City" , "Country", "Tempature", "Description","Illustration"]
         table = document.createElement("table");
         table.setAttribute("class", "myTable");
         
@@ -23,7 +23,7 @@ window.onload = function pre(){
 
 function getText(){
 	try{
-		$(".Title").animate({height : "140px"},600); //animates the div.
+		$(".search").animate({height : "140px"},600); //animates the div.
 		var p = document.getElementById("showData");
 		setTimeout(function(){ //shows up data after the slide.
 			while (p.firstChild) { //removing components from previous searches.
@@ -33,7 +33,9 @@ function getText(){
 	    },599);
 
 	}
-	catch(e){}
+	catch(e){
+		console.log(e);
+	}
 	try{
 		   /*setTimeout(function(){
 		    	
@@ -72,7 +74,7 @@ function getText(){
             },600);
            
 			
-		    $(".Title").animate({height : "250px"},1000); //animates the div.
+		    $(".search").animate({height : "250px"},1000); //animates the div.
 		    setTimeout(function(){ //shows up data after the slide.
 		    	$(".myTable").append(table);
 		    }, 2200);

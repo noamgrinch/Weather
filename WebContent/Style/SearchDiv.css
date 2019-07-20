@@ -11,6 +11,20 @@ body {
   text-transform: uppercase;
 }
 
+
+#showData{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	letter-spacing: -0.5px;
+	color: #595959;
+	font-weight: 900;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+
 .wrapper{
   width: 80%;
   max-width: 960px;
@@ -18,6 +32,19 @@ body {
   text-align: center;
   background-color: #f2f6ea;
   border-radius: 5px;
+}
+
+.Title{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	letter-spacing: -0.5px;
+	word-spacing: -3px;
+	color: #C1C1C1;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
 }
 
 .search{
@@ -35,21 +62,24 @@ body {
 .myTable{
   border-collapse: collapse;
   width: 100%;
-  font-size: 18px;
-  border-radius: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+
   
 }
 
 table.myTable {
-  border: 2px solid #A40808;
+
   background-color: #EEE7DB;
   width: 100%;
   text-align: center;
-  border-collapse: collapse;
+
+
 }
 table.myTable td, table.redTable th {
   border: 1px solid #AAAAAA;
   padding: 3px 2px;
+  border-radius: 1px;
 }
 table.myTable tbody td {
   font-size: 13px;
@@ -57,13 +87,13 @@ table.myTable tbody td {
 table.myTable tr:nth-child(even) {
   background: #F5C8BF;
 }
+
 table.myTable thead {
   background: #A40808;
 }
 table.myTable thead th {
   font-size: 19px;
   font-weight: bold;
-  color: #FFFFFF;
   text-align: center;
   border-left: 2px solid #A40808;
 }
@@ -78,7 +108,7 @@ table.myTable tfoot {
   background: #A40808;
 }
 table.myTable tfoot td {
-  font-size: 13px;
+  font-size: 20px;
 }
 table.myTable tfoot .links {
   text-align: right;
@@ -88,21 +118,7 @@ table.myTable tfoot .links a{
   background: #FFFFFF;
   color: #A40808;
   padding: 2px 8px;
-  border-radius: 5px;
-}
-
-.Data{
-  width: 80%;
-  max-width: 960px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #544545;
-  border-radius: 5px;
-}
-
-
-.temp{
-	padding:5px;
+  border-radius: 2px;
 }
 
 
