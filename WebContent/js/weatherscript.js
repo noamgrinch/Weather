@@ -39,7 +39,7 @@ function getText(){
 			}
 			table.deleteRow(1);}
 			catch(e){console.log("Empty table.")}
-	    },599);
+	    },600);
 
 	}
 	catch(e){
