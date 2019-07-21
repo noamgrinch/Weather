@@ -27,10 +27,46 @@ window.onload = function pre(){
 }
 
 
+function initMap(){
+	
+	var options = {
+			zoom:12,
+			center:{lat: 32.083333, lng: 34.7999968}
+	}
+
+
+	  var map = new google.maps.Map(
+	      document.getElementById('map'),options);
+
+	  var marker = new google.maps.Marker({position:{lat: 32.083333, lng: 34.7999968}, map: map});
+}
+
+
+function setMap(lt,lg){
+	try{
+		var options = {
+				zoom:12,
+				center:{lat: lt, lng: lg}
+		}
+	
+		var map = new google.maps.Map(
+				document.getElementById('map'),options);
+		
+		var latLng = new google.maps.LatLng(lt,lg);
+
+		  	map.panTo(latLng);
+		  	var marker = new google.maps.Marker({position:{lat: lt, lng: lg}, map: map});
+	}
+	catch(e){
+		console.log(e);
+	}
+}
+
+
 function getText(){
 	try{
 		var p = document.getElementById("showData");
-		$(".search").animate({height : "140px"},600); //animates the div.
+		$(".search").animate({height : "140px"},600); //animates the div. 
 		var p = document.getElementById("showData");
 		setTimeout(function(){ //shows up data after the slide.
 			try{
@@ -75,12 +111,15 @@ function getText(){
                   }
             }
             p.appendChild(table);
-           
+			var lat = data.city.coord.lat;
+			var lng = data.city.coord.lon;
+			setMap(lat,lng);
 		    $(".search").animate({height : "250px"},1000); //animates the div.
 		    setTimeout(function(){ //shows up data after the slide.
 		    	$(".myTable").append(table);
 		    }, 1200);		
 		}); },700);
+		
 		}
 		catch(e){	
 			p.appendChild(notFound);

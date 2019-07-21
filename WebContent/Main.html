@@ -7,6 +7,7 @@
 <script src="js/weatherscript.js"></script>
 <link rel="stylesheet" type="text/css" href="Style/SearchDiv.css">
 <link rel="stylesheet" type="text/css" href="Style/topBar.css">
+
 </head>
 <body background="resource/Tropical.png">
 	
@@ -38,11 +39,17 @@
 
 
 		<p id ="showData"></p>    <!-- the table that is generated and contains the data. -->
+		
 
 	
 	</div>
+	
+	<div id="map">
+			</div>
 
 
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C0FMrbfPsWDG0ngAJtwBJM80DQbuAI&callback=initMap">
+    </script>
 </body>
 </html>

@@ -19,6 +19,15 @@ body {
 	font-style: normal;
 	font-variant: normal;
 	text-transform: none;
+	
+
+}
+
+#map{
+	height:400px;
+	width:40%;
+	margin: 50px auto;
+	border-radius:12px;
 }
 
 
@@ -46,18 +55,18 @@ body {
 
 .search{
   width: 80%;
-  height: 150px;
+  height: 250px;
   max-width: 960px;
-  margin: 50px auto;
+  margin: 20px auto;
   text-align: center;
   border-radius: 10px;
-  padding:7px;
   padding-bottom:30px;
+  padding-top:3px;
 }
 
 .myTable{
   border-collapse: collapse;
-  width: 100%;
+  width: 60%;
   font-size: 15px;
   border-radius: 5px;
 
@@ -67,8 +76,9 @@ body {
 table.myTable {
 
   background-color: #EEE7DB;
-  width: 100%;
+  width: 80%;
   text-align: center;
+  margin: 50px auto;
 
 
 }
