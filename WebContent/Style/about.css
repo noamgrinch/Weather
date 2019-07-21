@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+
+body {
+  font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color:#f16059;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.Title{
+	width:30%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	letter-spacing: -0.5px;
+	word-spacing: -3px;
+	color: #C1C1C1;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-align: center;
+	background-color:#544545;
+	margin: 50px auto;
+	border-radius:15px;
+	height:400px;
+	padding-top:15px;
+}
+
+
+
+h1{
+	padding-bottom:35px;
+	
+}
+.par{
+	text-align:left;	
+	padding:10px;
+	
+}
+

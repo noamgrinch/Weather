@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Weather101</title>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="js/weatherscript.js"></script>
-<link rel="stylesheet" type="text/css" href="Style/SearchDiv.css">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="Style/about.css">
 <link rel="stylesheet" type="text/css" href="Style/topBar.css">
 </head>
 <body>
-	
+
+
+
 		<div id="menu-botton"> <!-- Menu. -->
 			<ul>
 				<li class="active">
@@ -23,26 +23,14 @@
 				</li>
 			</ul>
 		</div> <!-- Menu. -->
-		
-	
-	<div class="search">
-	
-		<h1 class="Title">Weather</h1>
-		<h2 class="Title">Start searching!</h2>
-	
-	
-		<input type="text" id="myInput"  placeholder="Search for a location..">
-		<input type="button" class="myBut" id="myButton" onclick="getText()" value="Search">
 
-
-
-
-		<p id ="showData"></p>    <!-- the table that is generated and contains the data. -->
-
-	
+	<div class="Title">
+		<h1>Weather application</h1>
+		<p class="par">This application presents to you the current weather in the location entered as an input<br>
+		Mainly, I have made this application to practice my web skills. It includes pulling data from an API using a generated key(free).
+		The API call returns a JSON file which is parsed and presents the relevant data to the user via a table. The animation is implemented in JQuery.
+		</p>
 	</div>
-
-
 
 </body>
 </html>
