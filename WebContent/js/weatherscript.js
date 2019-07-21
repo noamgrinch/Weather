@@ -46,6 +46,7 @@ function getText(){
 		console.log(e);
 	}
 	try{
+		setTimeout(function(){
 			var input = document.getElementById("myInput").value;
 			$.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + input + "&APPID=93063b4a7b640155f9e086514f637714", function(data) { 
 			console.log(data);
@@ -59,34 +60,30 @@ function getText(){
 			var country = data.city.country;
 			while (p.firstChild) { //removing components from previous searches.
 			    p.removeChild(p.firstChild);
-			}
-			       
-            setTimeout(function(){ /*table initilization*/
-    			tr = table.insertRow(-1);   			
-    			var values = [city,country,Math.floor(temp-273.15) + " C",desc,v]; // temperature  is in Kelvin units.	
-                for (var j = 0; j < values.length; j++) {
-                    var tabCell = document.createElement("td");
-                    tr.appendChild(tabCell);
-                    if(j!=4){
-                    	tabCell.innerHTML = values[j];
-                    }
-                    else{
-                    	tabCell.append(values[j]);
-                    }
-                }
-            	p.appendChild(table);
-            },600);
-            
+			}      
+  
+    		tr = table.insertRow(-1);   			
+    		var values = [city,country,Math.floor(temp-273.15) + " C",desc,v]; // temperature  is in Kelvin units.	
+            for (var j = 0; j < values.length; j++) {
+                 var tabCell = document.createElement("td");
+                 tr.appendChild(tabCell);
+                 if(j!=4){
+                    tabCell.innerHTML = values[j];
+                  }
+                  else{
+                    tabCell.append(values[j]);
+                  }
+            }
+            p.appendChild(table);
+           
 		    $(".search").animate({height : "250px"},1000); //animates the div.
 		    setTimeout(function(){ //shows up data after the slide.
 		    	$(".myTable").append(table);
-		    }, 2200);		
-		}); 
+		    }, 1200);		
+		}); },700);
 		}
-		catch(e){
-			
+		catch(e){	
 			p.appendChild(notFound);
-			
 		    $(".search").animate({height : "250px"},1000); //animates the div.
 		    setTimeout(function(){ //shows up data after the slide.
 		    	$(".showData").append(notFound);
