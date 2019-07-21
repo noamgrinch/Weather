@@ -33,12 +33,15 @@ li {
 li a {
   display: block;
   color: #C1C1C1;
-  font-weight: bold;
+  font-weight: 1;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-shadow: rgb(130, 130, 130) 1px 1px 1px;
+  
 }
 
 li a:hover {
   background-color: #111;
 }
+
