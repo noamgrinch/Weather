@@ -11,10 +11,8 @@ body {
 	width:30%;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 24px;
-	letter-spacing: -0.5px;
-	word-spacing: -3px;
 	color: #C1C1C1;
-	font-weight: 400;
+	font-weight: 1;
 	text-decoration: none;
 	font-style: normal;
 	font-variant: normal;
@@ -25,18 +23,15 @@ body {
 	padding-top:15px;
 }
 
-
-
 h1{
 	padding-bottom:35px;
 	font-size:40px;
 	
 }
+
 .par{
 	text-align:left;	
 	padding:10px;
 	font-size:20px;
-	
-	
 }
 
